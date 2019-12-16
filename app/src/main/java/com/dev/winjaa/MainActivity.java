@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         webView = findViewById(R.id.web);
-        webView.setWebViewClient(new WebViewClient());
+        webView.setWebViewClient(new MyAppWebViewClient());
         webView.getSettings().setAppCachePath( getApplicationContext().getCacheDir().getAbsolutePath() );
         webView.getSettings().setAllowFileAccess( true );
         webView.getSettings().setAppCacheEnabled( true );
